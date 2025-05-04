@@ -1,24 +1,24 @@
 services:
   windows:
-    image: dockurr/windows  # Hình ảnh Docker cho Windows
-    container_name: windows  # Tên container là "windows"
+    image: dockurr/windows
+    container_name: windows
     environment:
-      VERSION: "7u"           # Phiên bản Windows là Windows 7
-      USERNAME: "Administrator"  # Tên tài khoản là Administrator
-      PASSWORD: "negancsl123@@"  # Mật khẩu tài khoản Administrator
-      RAM_SIZE: "16G"         # Dung lượng RAM là 16GB
-      CPU_CORES: "4"         # Số lõi CPU là 4
-      DISK_SIZE: "20G"      # Dung lượng ổ đĩa là 20GB
+      VERSION: "2003"
+      USERNAME: "Administrator"
+      PASSWORD: "negancsl123@@"
+      RAM_SIZE: "16G"
+      CPU_CORES: "4"
+      DISK_SIZE: "16G"
     devices:
-      - /dev/kvm             # Cấp quyền truy cập KVM (cho ảo hóa phần cứng)
-      - /dev/net/tun         # Cấp quyền truy cập cho thiết bị mạng
+      - /dev/kvm
+      - /dev/net/tun
     cap_add:
-      - NET_ADMIN            # Thêm quyền NET_ADMIN để quản lý mạng
+      - NET_ADMIN
     ports:
-      - 8006:8006            # Mở cổng 8006 cho Web UI
-      - 3389:3389/tcp        # Cổng RDP (TCP) cho kết nối từ xa
-      - 3389:3389/udp        # Cổng RDP (UDP) cho kết nối từ xa
+      - 8006:8006
+      - 3389:3389/tcp
+      - 3389:3389/udp
     volumes:
-      - ./windows:/storage   # Gắn thư mục ./windows vào container
-    restart: always          # Tự động khởi động lại container khi gặp lỗi
-    stop_grace_period: 2m    # Thời gian đợi 2 phút khi dừng container
+      - ./windows:/storage
+    restart: always
+    stop_grace_period: 2m
