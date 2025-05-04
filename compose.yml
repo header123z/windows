@@ -6,9 +6,9 @@ services:
       VERSION: "7u"           # Phiên bản Windows là Windows 7
       USERNAME: "Administrator"  # Tên tài khoản là Administrator
       PASSWORD: "negancsl123@@"  # Mật khẩu tài khoản Administrator
-      RAM_SIZE: "16G"         # Dung lượng RAM là 8GB
+      RAM_SIZE: "16G"         # Dung lượng RAM là 16GB
       CPU_CORES: "4"         # Số lõi CPU là 4
-      DISK_SIZE: "126G"      # Dung lượng ổ đĩa là 126GB
+      DISK_SIZE: "20G"      # Dung lượng ổ đĩa là 20GB
     devices:
       - /dev/kvm             # Cấp quyền truy cập KVM (cho ảo hóa phần cứng)
       - /dev/net/tun         # Cấp quyền truy cập cho thiết bị mạng
