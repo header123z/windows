@@ -3,7 +3,7 @@ services:
     image: dockurr/windows  # Hình ảnh Docker cho Windows
     container_name: windows  # Tên container là "windows"
     environment:
-      VERSION: "7"           # Phiên bản Windows là Windows 7
+      VERSION: "7u"           # Phiên bản Windows là Windows 7
       USERNAME: "Administrator"  # Tên tài khoản là Administrator
       PASSWORD: "negancsl123@@"  # Mật khẩu tài khoản Administrator
       RAM_SIZE: "8G"         # Dung lượng RAM là 8GB
