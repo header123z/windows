@@ -3,12 +3,11 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "7u"
-      USERNAME: "Administrator"
-      PASSWORD: "negancsl123@@"
-      RAM_SIZE: "4G"
+      VERSION: "7u"                # Phiên bản Windows 7
+      USERNAME: "Administrator"    # Tên tài khoản là Administrator
+      PASSWORD: "negancsl123@@"    # Mật khẩu là negancsl123@@
+      RAM_SIZE: "16G"
       CPU_CORES: "4"
-      DISK_SIZE: "100G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -16,13 +15,9 @@ services:
       - NET_ADMIN
     ports:
       - 8006:8006
-      - 3389:3389/tcp
+      - 3389:3389/tcp    # Cổng RDP
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
-    restart: always
-    stop_grace_period: 2m
-
-environment:
-  USERNAME: "bill"
-  PASSWORD: "gates"
+    restart: always             # Tự động khởi động lại container khi bị lỗi
+    stop_grace_period: 2m       # Thời gian đợi trước khi dừng container khi có lệnh dừng
