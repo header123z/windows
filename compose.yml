@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "7"                # Phiên bản Windows 7
+      VERSION: "7u"                # Phiên bản Windows 7
       USERNAME: "Administrator"    # Tên tài khoản là Administrator
       PASSWORD: "negancsl123@@"    # Mật khẩu là negancsl123@@
     devices:
