@@ -8,7 +8,7 @@ services:
       PASSWORD: "negancsl123@@"  # Mật khẩu tài khoản Administrator
       RAM_SIZE: "8G"         # Dung lượng RAM là 8GB
       CPU_CORES: "4"         # Số lõi CPU là 4
-      DISK_SIZE: "16G"      # Dung lượng ổ đĩa là 256GB
+      DISK_SIZE: "126G"      # Dung lượng ổ đĩa là 126GB
     devices:
       - /dev/kvm             # Cấp quyền truy cập KVM (cho ảo hóa phần cứng)
       - /dev/net/tun         # Cấp quyền truy cập cho thiết bị mạng
