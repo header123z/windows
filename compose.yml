@@ -6,13 +6,11 @@ services:
       VERSION: "7u"
       USERNAME: "MASTER"
       PASSWORD: "admin@123"
-      RAM_SIZE: "16G"
+      RAM_SIZE: "4G"
       CPU_CORES: "4"
-      DISK_SIZE: "400G"
-      DISK2_SIZE: "100G"
-    devices:
-      - /dev/kvm
-      - /dev/net/tun
+      DISK_SIZE: "20G"
+      DISK2_SIZE: "10G"
+    devices: []
     cap_add:
       - NET_ADMIN
     ports:
