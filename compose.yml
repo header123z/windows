@@ -4,9 +4,9 @@ services:
     container_name: windows
     environment:
       VERSION: "7u"
-      USERNAME: "MASTER"
+      USERNAME: "Administrator"
       PASSWORD: "admin@123"
-      RAM_SIZE: "12G"
+      RAM_SIZE: "4G"
       CPU_CORES: "4"
     devices: []
     cap_add:
