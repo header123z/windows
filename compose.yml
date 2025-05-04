@@ -6,9 +6,8 @@ services:
       VERSION: "7u"
       USERNAME: "MASTER"
       PASSWORD: "admin@123"
-      RAM_SIZE: "8G"
+      RAM_SIZE: "12G"
       CPU_CORES: "4"
-      DISK_SIZE: "20G"
     devices: []
     cap_add:
       - NET_ADMIN
