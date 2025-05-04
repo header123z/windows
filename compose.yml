@@ -6,7 +6,7 @@
       VERSION: "7u"
       USERNAME: "Administrator"
       PASSWORD: "negancsl123@@"
-      RAM_SIZE: "10G"
+      RAM_SIZE: "8G"
       CPU_CORES: "4"
     devices: []
     cap_add:
